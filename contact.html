@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Help me Help You - Supporting Young Mens Mental Health</title>
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Help Me Help You</h1>
+            <p>Connect with a Counselor</p>
+        </header>
+        <nav>
+            <ul>
+                <li> Home </li>
+                <li> Connect with a Counselor </li>
+                <li> Motivational Quotes and Bible Verses </li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Request to speak with a Counselor</h2>
+                <p>We are here to support you. Fill out the form below and one of our trained counselors will reach out to you within 24 hours. All information is kept confidential.</p>
+            </section>
+              <form action="submit_form.php" method="post">
+                 <!--THE NEXT COUPLE OF LINES A THE PERSONAL INFORMATION SECTION -->
+                 <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label> for="firstname">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <br><br>
+
+                     <label for="lastName">Last Name:</label>
+                     <input type="text" id="lastName" name="lastName" required>
+                     <br><br>
+
+                     <label for="age">Age:</label>
+                     <input type="number" id="age" name="age" min="13" max="18" required>
+                     <br><br>
+
+                     <label for="email">Email Address:</label>
+                     <input type="email" id="email" name="email" required>
+                      <br><br>
+
+                      <label for="phone">Phone Number:</label>
+                     <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                     <br><br>
+                 </fieldset>
+                            <!-- THE SUPPORT SECTION WILL BE THE NEXT COUPLE OF LINES -->
+                    <fieldset>
+                        <legend>What type of support are you looking for</legend>
+                        <input type="checkbox" id="anxiety" name="support" value="anxiety">
+                        <label for="anxiety">Anxiety/Stress Management</label>
+                        <br>
+
+                        <input type="checkbox" id="depression" name="support" value="depression">
+                        <label for="depression">Depression Support</label>
+                        <br>
+
+                        <input type="checkbox" id="school" name="support" value="school">
+                        <label for="school">School Pressure</label>
+                        <br>
+
+                        <input type="checkbox" id="family" name="support" value="family">
+                        <label for="family">Family Issues</label>
+                        <br>
+
+                        <input type="checkbox" id="social" name="support" value="social">
+                        <label for="social">Social/Relationship Issues</label>
+                        <br>
+
+                        <input type="checkbox" id="other" name="support" value="other">
+                        <label for="other">Other</label>
+                        <br><br>
+                        </fieldset>
+
+                    <!--THE NEXT COUPLE OF LINES WILL BE THE PREFFERED CONTACH METHOD SECTION-->
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+                        <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
+                        <label for="contactEmail">Email</label>
+                        <br>
+
+                        <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                        <label for="contactPhone">Phone</label>
+                        <br>
+
+                        <input type="radio" id="contactText" name="contactMethod" value="Text">
+                        <label for="contactText">Text</label>
+                        <br><br>
+                    </fieldset>
+
+                <!--THE NEXT LINE OF CODE IS THE SESSION PREFERENCE SECTION-->
+                     <fieldset>
+                        <legend> Session PREFERENCE</legend>
+                        <label for="sessionType">Type of Session:</label>
+                        <select id="sessionType" name="sessionType" required>
+                            <option value="">--Please Choose--</option>
+                            <option value="individual">Individual One-on-One</option>
+                            <option value="group">Group Session</option>
+                            <option value="Family">Family Session</option>
+                             <option value="unsure">Not Sure Yet</option>
+                        </select>
+                        <br><br>
+                     </fieldset>
+
+                     <!--ADDITIONAL INFORMATION-->
+                     <fieldset>
+                        <legend>Tell Us More</legend>
+                        <label for="message">What would you like to discuss? (Optional)</label>
+                        <br>
+                        <textarea id="message" name="message" rows="6" cols="50" placeholder="Share anything you feel comfortable telling us"></textarea>
+                        <br><br>
+                     </fieldset>
+
+                     <!--Submit AREA-->
+                     <input type="submit" value="Submit Request">
+                     <input type="reset" value="Clear Form">
+
+                </form>
+
+                
+            </main>
+
+             <footer>
+            <p>Contact us: <a href="mailto:roffodile@student.clayton.edu">roffodile@student.clayton.edu</a></p>
+            <p>Assignment Due Date: 3/22/26</p>
+            <p>Help me Help You - Supporting Young Men Since 2025</p>
+            <p> Assignment Due Date: 3/22/2026 </p>
+        </footer>
+        </body>
+    </html>
